@@ -35,8 +35,13 @@
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>CustomerMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.CustomerMBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+    <managed-bean>
+        <managed-bean-name>CustomerListMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.CustomerListMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
@@ -45,88 +50,74 @@
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>FilmActorMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.FilmActorMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>FilmCategoryMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.FilmCategoryMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>FilmListMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.FilmListMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>FilmTextMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.FilmTextMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>InventoryMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.InventoryMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>LanguageMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.LanguageMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>NicerButSlowerFilmListMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.NicerButSlowerFilmListMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>PaymentMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.PaymentMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>RentalMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.RentalMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>SalesByFilmCategoryMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.SalesByFilmCategoryMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>SalesByStoreMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.SalesByStoreMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>StaffMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.StaffMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>StaffListMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.StaffListMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
+        <managed-bean-name>StoreMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.StoreMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
-    <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
-    <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
-    <managed-bean>
-        <managed-bean-name>FilmMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmMBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
+    
 </faces-config>
