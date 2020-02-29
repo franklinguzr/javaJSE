@@ -8,6 +8,8 @@ package managedbeans;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
+import javax.ejb.EJB;
+import session.FilmFacadeLocal;
 
 /**
  *
@@ -17,10 +19,13 @@ import java.io.Serializable;
 @SessionScoped
 public class FilmMBean implements Serializable {
 
+    @EJB
+    private FilmFacadeLocal filmFacade;
+
     /**
      * Creates a new instance of FilmMBean
      */
-    public FilmMBean() {
+    public FilmMBean() {    
     }
-    
+        
 }
