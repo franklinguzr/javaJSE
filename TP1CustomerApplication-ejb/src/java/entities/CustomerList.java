@@ -9,6 +9,7 @@ import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
@@ -40,6 +41,7 @@ public class CustomerList implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "ID")
+    @Id
     private short id;
     @Size(max = 91)
     @Column(name = "name")
@@ -50,7 +52,7 @@ public class CustomerList implements Serializable {
     @Column(name = "address")
     private String address;
     @Size(max = 10)
-    @Column(name = "zip code")
+    @Column(name = "zipcode")
     private String zipCode;
     // @Pattern(regexp="^\\(?(\\d{3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})$", message="Formato tel./fax. invalido, debe ser xxx-xxx-xxxx")//if the field contains phone or fax number consider using this annotation to enforce field validation
     @Basic(optional = false)

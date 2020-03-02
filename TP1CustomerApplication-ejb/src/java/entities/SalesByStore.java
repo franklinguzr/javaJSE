@@ -9,6 +9,7 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
@@ -32,6 +33,7 @@ public class SalesByStore implements Serializable {
     private static final long serialVersionUID = 1L;
     @Size(max = 101)
     @Column(name = "store")
+    @Id
     private String store;
     @Size(max = 91)
     @Column(name = "manager")

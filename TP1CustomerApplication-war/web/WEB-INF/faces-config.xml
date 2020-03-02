@@ -65,11 +65,6 @@
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
     <managed-bean>
-        <managed-bean-name>FilmTextMBean</managed-bean-name>
-        <managed-bean-class>com.udea.controller.FilmTextMBean</managed-bean-class>
-        <managed-bean-scope>session</managed-bean-scope>
-    </managed-bean>
-    <managed-bean>
         <managed-bean-name>InventoryMBean</managed-bean-name>
         <managed-bean-class>com.udea.controller.InventoryMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
@@ -109,6 +104,11 @@
         <managed-bean-class>com.udea.controller.StaffMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
+     <managed-bean>
+        <managed-bean-name>filmTextMBean</managed-bean-name>
+        <managed-bean-class>com.udea.controller.FilmTextMBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
     <managed-bean>
         <managed-bean-name>StaffListMBean</managed-bean-name>
         <managed-bean-class>com.udea.controller.StaffListMBean</managed-bean-class>
@@ -119,4 +119,22 @@
         <managed-bean-class>com.udea.controller.StoreMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
+
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>submit</from-outcome>
+            <to-view-id>/welcomePrimefaces.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>submit</from-outcome>
+            <to-view-id>/FilmList.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <managed-bean>
+        <managed-bean-name>customerLisMBean</managed-bean-name>
+        <managed-bean-class>managedbeans.CustomerLisMBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
+
 </faces-config>
