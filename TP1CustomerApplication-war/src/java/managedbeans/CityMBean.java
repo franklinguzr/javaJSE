@@ -5,54 +5,56 @@
  */
 package managedbeans;
 
-import entities.Film;
+import entities.City;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 import java.util.List;
 import javax.ejb.EJB;
-import session.FilmFacadeLocal;
+import session.CityFacadeLocal;
 
 /**
  *
  * @author FRANKLIN
  */
-@Named(value = "filmMBean")
+@Named(value = "cityMBean")
 @SessionScoped
-public class FilmMBean implements Serializable {
+public class CityMBean implements Serializable {
 
-    @EJB
-    private FilmFacadeLocal filmFacade;
-
-    private Film film;
-    private List<Film> films;
     /**
-     * Creates a new instance of FilmMBean
+     * Creates a new instance of CityMBean
      */
-    public FilmMBean() {  
+    public CityMBean() {
     }
+    @EJB
+    private CityFacadeLocal cityFacade;
+
+   
+    private City film;
+    private List<City> films;
     
-    public List<Film>getFilms(){
+    
+    public List<City>getFilms(){
         if (((films)==(null))||(films.isEmpty())) refresh();
         return films;
     }
 
     private void refresh() {
-        films = filmFacade.findAll();
+        films = cityFacade.findAll();
      }
-    public Film getDetails(){
+    public City getDetails(){
     return film;
     }
     
-    public String showDetails(Film film){
+    public String showDetails(City film){
         this.film=film;
         return "FilmDetails";
     }
     
     public String update(){
         System.out.println("##UPDATE##");
-        filmFacade.edit(film);
-        film=filmFacade.find(film.getFilmId());
+        cityFacade.edit(film);
+        film=cityFacade.find(film.getCityId());
         return "FilmList";
     }
     public String list(){
