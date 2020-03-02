@@ -5,54 +5,56 @@
  */
 package managedbeans;
 
-import entities.Film;
+import entities.Customer;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 import java.util.List;
 import javax.ejb.EJB;
-import session.FilmFacadeLocal;
+import session.CustomerFacadeLocal;
 
 /**
  *
  * @author FRANKLIN
  */
-@Named(value = "filmMBean")
+@Named(value = "customerMBean")
 @SessionScoped
-public class FilmMBean implements Serializable {
+public class CustomerMBean implements Serializable {
 
     @EJB
-    private FilmFacadeLocal filmFacade;
+    private CustomerFacadeLocal customerFacade;
 
-    private Film film;
-    private List<Film> films;
     /**
-     * Creates a new instance of FilmMBean
+     * Creates a new instance of CustomerMBean
      */
-    public FilmMBean() {  
+    public CustomerMBean() {
     }
+   
+    private Customer film;
+    private List<Customer> films;
     
-    public List<Film>getFilms(){
+    
+    public List<Customer>getFilms(){
         if (((films)==(null))||(films.isEmpty())) refresh();
         return films;
     }
 
     private void refresh() {
-        films = filmFacade.findAll();
+        films = customerFacade.findAll();
      }
-    public Film getDetails(){
+    public Customer getDetails(){
     return film;
     }
     
-    public String showDetails(Film film){
+    public String showDetails(Customer film){
         this.film=film;
         return "FilmDetails";
     }
     
     public String update(){
         System.out.println("##UPDATE##");
-        filmFacade.edit(film);
-        film=filmFacade.find(film.getFilmId());
+        customerFacade.edit(film);
+        film=customerFacade.find(film.getCustomerId());
         return "FilmList";
     }
     public String list(){

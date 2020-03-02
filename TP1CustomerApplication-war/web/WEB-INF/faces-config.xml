@@ -119,6 +119,7 @@
         <managed-bean-class>com.udea.controller.StoreMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
+
     <navigation-rule>
         <from-view-id>/index.xhtml</from-view-id>
         <navigation-case>
@@ -135,4 +136,5 @@
         <managed-bean-class>managedbeans.CustomerLisMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
+
 </faces-config>

@@ -5,54 +5,55 @@
  */
 package managedbeans;
 
-import entities.Film;
+import entities.FilmCategory;
 import javax.inject.Named;
 import javax.enterprise.context.SessionScoped;
 import java.io.Serializable;
 import java.util.List;
 import javax.ejb.EJB;
-import session.FilmFacadeLocal;
+import session.FilmCategoryFacadeLocal;
 
 /**
  *
  * @author FRANKLIN
  */
-@Named(value = "filmMBean")
+@Named(value = "filmCategoryManagedBean")
 @SessionScoped
-public class FilmMBean implements Serializable {
+public class FilmCategoryManagedBean implements Serializable {
 
     @EJB
-    private FilmFacadeLocal filmFacade;
+    private FilmCategoryFacadeLocal filmCategoryFacade;
 
-    private Film film;
-    private List<Film> films;
     /**
-     * Creates a new instance of FilmMBean
+     * Creates a new instance of FilmCategoryManagedBean
      */
-    public FilmMBean() {  
+    public FilmCategoryManagedBean() {
     }
+     private FilmCategory film;
+    private List<FilmCategory> films;
     
-    public List<Film>getFilms(){
+    
+    public List<FilmCategory>getFilms(){
         if (((films)==(null))||(films.isEmpty())) refresh();
         return films;
     }
 
     private void refresh() {
-        films = filmFacade.findAll();
+        films = filmCategoryFacade.findAll();
      }
-    public Film getDetails(){
+    public FilmCategory getDetails(){
     return film;
     }
     
-    public String showDetails(Film film){
+    public String showDetails(FilmCategory film){
         this.film=film;
         return "FilmDetails";
     }
     
     public String update(){
         System.out.println("##UPDATE##");
-        filmFacade.edit(film);
-        film=filmFacade.find(film.getFilmId());
+        filmCategoryFacade.edit(film);
+        film=filmCategoryFacade.find(film.getFilmCategoryPK());
         return "FilmList";
     }
     public String list(){
