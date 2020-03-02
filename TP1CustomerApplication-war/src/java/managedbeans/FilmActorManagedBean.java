@@ -5,54 +5,58 @@
  */
 package managedbeans;
 
-import entities.Address;
+import entities.FilmActor;
+import javax.inject.Named;
+import javax.enterprise.context.SessionScoped;
+import java.io.Serializable;
 import java.util.List;
 import javax.ejb.EJB;
-import javax.inject.Named;
-import javax.enterprise.context.Dependent;
-import session.AddressFacadeLocal;
+import session.FilmActorFacadeLocal;
 
 /**
  *
  * @author FRANKLIN
  */
-@Named(value = "addresMBean")
-@Dependent
-public class AddresMBean {
+@Named(value = "filmActorManagedBean")
+@SessionScoped
+public class FilmActorManagedBean implements Serializable {
 
     @EJB
-    private AddressFacadeLocal addressFacade;
+    private FilmActorFacadeLocal filmActorFacade;
 
     /**
-     * Creates a new instance of AddresMBean
+     * Creates a new instance of FilmActorManagedBean
      */
-    public AddresMBean() {
+    public FilmActorManagedBean() {
     }
-    private Address film;
-    private List<Address> films;
+    
+
+   
+    private FilmActor film;
+    private List<FilmActor> films;
     
     
-    public List<Address>getFilms(){
+    public List<FilmActor>getFilms(){
         if (((films)==(null))||(films.isEmpty())) refresh();
         return films;
     }
 
     private void refresh() {
-      //  tousLesComptes = compteBancaireFacade.findAll();
+        films = filmActorFacade.findAll();
      }
-    public Address getDetails(){
+    public FilmActor getDetails(){
     return film;
     }
     
-    public String showDetails(Address film){
+    public String showDetails(FilmActor film){
         this.film=film;
         return "FilmDetails";
     }
     
     public String update(){
         System.out.println("##UPDATE##");
-        addressFacade.edit(film);
-        film=addressFacade.find(film.getAddressId());
+        filmActorFacade.edit(film);
+        film=filmActorFacade.find(film.getFilmActorPK());
         return "FilmList";
     }
     public String list(){

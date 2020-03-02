@@ -6,10 +6,11 @@
 package managedbeans;
 
 import entities.Category;
+import javax.inject.Named;
+import javax.enterprise.context.SessionScoped;
+import java.io.Serializable;
 import java.util.List;
 import javax.ejb.EJB;
-import javax.inject.Named;
-import javax.enterprise.context.Dependent;
 import session.CategoryFacadeLocal;
 
 /**
@@ -17,20 +18,19 @@ import session.CategoryFacadeLocal;
  * @author FRANKLIN
  */
 @Named(value = "categoryMBean")
-@Dependent
-public class CategoryMBean {
-
-    @EJB
-    private CategoryFacadeLocal categoryFacade;
+@SessionScoped
+public class CategoryMBean implements Serializable {
 
     /**
      * Creates a new instance of CategoryMBean
      */
     public CategoryMBean() {
     }
+     @EJB
+    private CategoryFacadeLocal categoryFacade;
+
     
-    
-    
+     
     private Category film;
     private List<Category> films;
     
@@ -41,7 +41,7 @@ public class CategoryMBean {
     }
 
     private void refresh() {
-      //  tousLesComptes = compteBancaireFacade.findAll();
+        films = categoryFacade.findAll();
      }
     public Category getDetails(){
     return film;

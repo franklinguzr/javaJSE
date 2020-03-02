@@ -6,10 +6,11 @@
 package managedbeans;
 
 import entities.Actor;
+import javax.inject.Named;
+import javax.enterprise.context.SessionScoped;
+import java.io.Serializable;
 import java.util.List;
 import javax.ejb.EJB;
-import javax.inject.Named;
-import javax.enterprise.context.Dependent;
 import session.ActorFacadeLocal;
 
 /**
@@ -17,8 +18,8 @@ import session.ActorFacadeLocal;
  * @author FRANKLIN
  */
 @Named(value = "actorMBean")
-@Dependent
-public class ActorMBean {
+@SessionScoped
+public class ActorMBean implements Serializable {
 
     /**
      * Creates a new instance of ActorMBean
@@ -38,7 +39,7 @@ public class ActorMBean {
     }
 
     private void refresh() {
-      //  tousLesComptes = compteBancaireFacade.findAll();
+        films = filmFacade.findAll();
      }
     public Actor getDetails(){
     return film;

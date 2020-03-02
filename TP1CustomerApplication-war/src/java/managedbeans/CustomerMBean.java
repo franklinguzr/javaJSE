@@ -40,7 +40,7 @@ public class CustomerMBean implements Serializable {
     }
 
     private void refresh() {
-      //  tousLesComptes = compteBancaireFacade.findAll();
+        films = customerFacade.findAll();
      }
     public Customer getDetails(){
     return film;

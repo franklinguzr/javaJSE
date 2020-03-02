@@ -38,7 +38,7 @@ public class FilmMBean implements Serializable {
     }
 
     private void refresh() {
-      //  tousLesComptes = compteBancaireFacade.findAll();
+        films = filmFacade.findAll();
      }
     public Film getDetails(){
     return film;

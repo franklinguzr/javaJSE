@@ -6,10 +6,11 @@
 package managedbeans;
 
 import entities.Country;
+import javax.inject.Named;
+import javax.enterprise.context.SessionScoped;
+import java.io.Serializable;
 import java.util.List;
 import javax.ejb.EJB;
-import javax.inject.Named;
-import javax.enterprise.context.Dependent;
 import session.CountryFacadeLocal;
 
 /**
@@ -17,8 +18,8 @@ import session.CountryFacadeLocal;
  * @author FRANKLIN
  */
 @Named(value = "countryMBean")
-@Dependent
-public class CountryMBean {
+@SessionScoped
+public class CountryMBean implements Serializable {
 
     @EJB
     private CountryFacadeLocal countryFacade;
@@ -38,7 +39,7 @@ public class CountryMBean {
     }
 
     private void refresh() {
-      //  tousLesComptes = compteBancaireFacade.findAll();
+        films = countryFacade.findAll();
      }
     public Country getDetails(){
     return film;
@@ -59,4 +60,5 @@ public class CountryMBean {
         System.out.println("##LIST##");
         return "FilmList";
     }
+    
 }

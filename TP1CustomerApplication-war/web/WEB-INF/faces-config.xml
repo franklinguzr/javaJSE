@@ -119,5 +119,4 @@
         <managed-bean-class>com.udea.controller.StoreMBean</managed-bean-class>
         <managed-bean-scope>session</managed-bean-scope>
     </managed-bean>
-    
 </faces-config>
