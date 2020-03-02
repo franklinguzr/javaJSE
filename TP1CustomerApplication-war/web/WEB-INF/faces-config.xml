@@ -130,5 +130,9 @@
             <to-view-id>/FilmList.xhtml</to-view-id>
         </navigation-case>
     </navigation-rule>
-   
+    <managed-bean>
+        <managed-bean-name>customerLisMBean</managed-bean-name>
+        <managed-bean-class>managedbeans.CustomerLisMBean</managed-bean-class>
+        <managed-bean-scope>session</managed-bean-scope>
+    </managed-bean>
 </faces-config>
