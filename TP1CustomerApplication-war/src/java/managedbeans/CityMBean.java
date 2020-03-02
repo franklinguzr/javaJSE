@@ -5,34 +5,36 @@
  */
 package managedbeans;
 
-import entities.Film;
-import javax.inject.Named;
-import javax.enterprise.context.SessionScoped;
-import java.io.Serializable;
+import entities.City;
 import java.util.List;
 import javax.ejb.EJB;
-import session.FilmFacadeLocal;
+import javax.inject.Named;
+import javax.enterprise.context.Dependent;
+import session.CityFacadeLocal;
 
 /**
  *
  * @author FRANKLIN
  */
-@Named(value = "filmMBean")
-@SessionScoped
-public class FilmMBean implements Serializable {
+@Named(value = "cityMBean")
+@Dependent
+public class CityMBean {
 
     @EJB
-    private FilmFacadeLocal filmFacade;
+    private CityFacadeLocal cityFacade;
 
-    private Film film;
-    private List<Film> films;
     /**
-     * Creates a new instance of FilmMBean
+     * Creates a new instance of CityMBean
      */
-    public FilmMBean() {  
+    public CityMBean() {
     }
     
-    public List<Film>getFilms(){
+
+    private City film;
+    private List<City> films;
+    
+    
+    public List<City>getFilms(){
         if (((films)==(null))||(films.isEmpty())) refresh();
         return films;
     }
@@ -40,19 +42,19 @@ public class FilmMBean implements Serializable {
     private void refresh() {
       //  tousLesComptes = compteBancaireFacade.findAll();
      }
-    public Film getDetails(){
+    public City getDetails(){
     return film;
     }
     
-    public String showDetails(Film film){
+    public String showDetails(City film){
         this.film=film;
         return "FilmDetails";
     }
     
     public String update(){
         System.out.println("##UPDATE##");
-        filmFacade.edit(film);
-        film=filmFacade.find(film.getFilmId());
+        cityFacade.edit(film);
+        film=cityFacade.find(film.getCityId());
         return "FilmList";
     }
     public String list(){

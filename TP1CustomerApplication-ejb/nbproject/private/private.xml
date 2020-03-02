@@ -3,7 +3,61 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/InventoryFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/entities/Inventory.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmTextFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/LanguageFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/entities/Language.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/StaffFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/AbstractFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/SalesByFilmCategoryFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/RentalFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/conf/persistence.xml</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/StoreFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/StaffFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/SalesByStoreFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CityFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/PaymentFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmListFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/entities/FilmActor.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/ActorInfoFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/PaymentFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmTextFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CountryFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/AddressFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/StaffListFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/RentalFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/InventoryFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CountryFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/ActorFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/AddressFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/SalesByStoreFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CityFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CustomerListFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/ActorInfoFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/LanguageFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CustomerListFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/SalesByFilmCategoryFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmActorFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CustomerFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/StoreFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmListFacadeLocal.java</file>
             <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/entities/Actor.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/NicerButSlowerFilmListFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/NicerButSlowerFilmListFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/entities/FilmActorPK.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/ActorFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CategoryFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmCategoryFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/entities/FilmCategory.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmActorFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CustomerFacade.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/FilmCategoryFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/entities/Film.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/CategoryFacadeLocal.java</file>
+            <file>file:/D:/proyectos/NetBeansProjects/TP1CustomerApplication/TP1CustomerApplication-ejb/src/java/session/StaffListFacade.java</file>
         </group>
     </open-files>
 </project-private>
