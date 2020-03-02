@@ -52,7 +52,7 @@ public class CustomerList implements Serializable {
     @Column(name = "address")
     private String address;
     @Size(max = 10)
-    @Column(name = "zip code")
+    @Column(name = "zipcode")
     private String zipCode;
     // @Pattern(regexp="^\\(?(\\d{3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})$", message="Formato tel./fax. invalido, debe ser xxx-xxx-xxxx")//if the field contains phone or fax number consider using this annotation to enforce field validation
     @Basic(optional = false)
