@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewFilmTextTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewFilmTextLabel_filmId}"/>
+                    <h:outputText value="#{filmTextController.selected.filmId}" title="#{bundle.ViewFilmTextTitle_filmId}"/>
+                    <h:outputText value="#{bundle.ViewFilmTextLabel_title}"/>
+                    <h:outputText value="#{filmTextController.selected.title}" title="#{bundle.ViewFilmTextTitle_title}"/>
+                    <h:outputText value="#{bundle.ViewFilmTextLabel_description}"/>
+                    <h:outputText value="#{filmTextController.selected.description}" title="#{bundle.ViewFilmTextTitle_description}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{filmTextController.destroyAndView}" value="#{bundle.ViewFilmTextDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewFilmTextEditLink}"/>
+                <br />
+                <h:commandLink action="#{filmTextController.prepareCreate}" value="#{bundle.ViewFilmTextCreateLink}" />
+                <br />
+                <h:commandLink action="#{filmTextController.prepareList}" value="#{bundle.ViewFilmTextShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewFilmTextIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
